@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
     public static void task1 () {
         var dog = 8.0;
@@ -76,5 +77,15 @@ public class Main {
         System.out.println("Задача 6");
         System.out.println("Общий вес двух бойцов " + totalBoxerWeight + " кг");
         System.out.println("Разница между весами бойцов " + boxersWeightDifference + " кг");
+    }
+    public static void task7 () {
+        var firstBoxerWeight = 78.2;
+        var secondBoxerWeight = 82.7;
+        var boxersWeightDifference = secondBoxerWeight - firstBoxerWeight;
+
+        System.out.println("Задача 7");
+        System.out.println("Разница между весами бойцов способом вычитания " + boxersWeightDifference + " кг");
+        boxersWeightDifference = secondBoxerWeight % firstBoxerWeight;
+        System.out.println("Разница между весами бойцов способом остатка деления " + boxersWeightDifference + " кг");
     }
 }
